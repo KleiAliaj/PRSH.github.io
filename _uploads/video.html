@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no">
+        <!-- FAVICONS ICON -->
+        <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+        <!-- PAGE TITLE HERE -->
+        <title>Salvatore Giannini Consulente  NEWORKOM  - Chi Siamo</title>
+        <!-- MOBILE SPECIFIC -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+  <!-- STYLESHEETS -->
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/templete.css">
+	<link rel="stylesheet" type="text/css" class="skin" href="css/skin/skin-2.css">
+	<link href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Rajdhani:300,400,500,600,700&display=swap');
+	</style>
+
+    </head>
+    <body>
+        <div class="page-wraper">
+            <!-- header -->
+            <header class="site-header header-transparent header2">
+                <!-- main header -->
+                <div class="sticky-header main-bar-wraper navbar-expand-xl">
+                    <div class="main-bar clearfix">
+                        <div class="container-fluid clearfix">
+                            <!-- website logo -->
+                            <div class="logo-header">
+                                <a href="index.html"><img src="images/logo-black-2.png" alt=""></a>
+                            </div>
+                            <!-- extra nav -->
+                            <div class="extra-nav">
+                                <div class="extra-cell">
+                                  <ul>
+                                    <li><a href="javascript:void(0);" class="menu-btn"><span>Menu</span><div class="menu"><span></span><span></span><span></span></div></a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                            <!-- main nav -->
+                            <div class="header-nav icon-menu active">
+                              <ul class="nav navbar-nav">
+                                  <li><a href="index.html"><img src="images/home.png" alt="home"/></a></li>
+                                  <li><a href="about.html"><img src="images/bio.png" alt="biografia"/></a></li>
+                                  <li class="active"><a href="video.html"><img src="images/video_w.png" alt="video"/></a></li>
+                                  <li><a href="contact.html"><img src="images/contact.png" alt="contatti"/></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- main header END -->
+            </header>
+            <!-- header END -->
+            <div class="dlab-bnr-inr text-center" data-content="Neworkom">
+                <div class="container">
+                    <div class="dlab-bnr-inr-entry align-m text-center">
+                        <h1 class="text-white">Neworkom</h1>
+                        <!-- Breadcrumb row -->
+                        <div class="breadcrumb-row">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>Neworkom</li>
+                            </ul>
+                        </div>
+                        <!-- Breadcrumb row END -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-body">
+                <div class="content-body-inner">
+                    <!-- About Image -->
+
+                    <!-- About Info -->
+                    <div class="section-full content-inner-1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+
+
+    <iframe id="player" width="100%" height="450px" src="https://www.youtube.com/embed/0E8bRFa8rRQ?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p id="message"></p>
+
+			</div>
+    </div>
+  </div>
+</div>
+        <!-- JavaScript  files ========================================= -->
+        <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
+        <script src="plugins/bootstrap/js/popper.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+        <script src="plugins/bootstrap/js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+        <script src="plugins/owl-carousel/owl.carousel.js"></script><!-- LIGHTGALLERY -->
+        <script src="js/dz.carousel.js"></script><!-- LIGHTGALLERY -->
+        <script src="js/wow.js"></script><!-- WOW JS -->
+        <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+        <script type="text/javascript">
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(tag, firstScript);
+        function onYouTubeIframeAPIReady() {
+            new YT.Player('player', {
+                events: {
+                    'onStateChange': function(evt) {
+                        if (evt.data === YT.PlayerState.ENDED) {
+                            document.getElementById('message').innerHTML = "<h2>Contatta chi ti ha inviato questo video e chiedi maggiori informazioni.<br><br>Neworkom migliorerà la vita anche a te..</h2>";
+
+                        }
+                     }
+                 }
+            });
+        }
+    </script>
+
+    </body>
+</html>
